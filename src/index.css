@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  
 }
 
 .App {
@@ -79,17 +80,7 @@ ul {
 }
 
 
-.pigTile {
-  display: inline;
-  background-repeat: no-repeat;
-  background-position: center 90%;
-  float: left;
-  margin: 2%;
-  padding: 1%;
-  outline: #3B0B0B dotted thick;
-  transition: 0.75s;
-  opacity: 1;
-}
+
 
 .minBackgroundSneak {
   position: absolute;
@@ -149,4 +140,48 @@ ul {
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.main {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+  
+  
+}
+
+.hog-tiles {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.hog-form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: start;
+  grid-gap: 0.5em;
+
+}
+
+.form-section {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+  justify-items: start;
+  align-items: start;
+}
+
+.tile {
+  align-self: start;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
